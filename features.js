@@ -42,6 +42,7 @@ function game(playerSelection, computerSelection) {
         }
     } else {
         console.log('Please refresh the site and enter your choice again!');
+        game(playerPlay(), computerSelection); // recursion to get new input
     }
 
 }
