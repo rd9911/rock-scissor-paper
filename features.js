@@ -1,6 +1,6 @@
 // to track scores after each round
-    let playerScore = 0;
-    let computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 // computer will choose one of ['rock', 'scissors', 'paper']
 function computerPlay() {
@@ -17,7 +17,7 @@ function playerPlay() {
 
 // function that compares computer and player's choice and determine the winner of the round.
 function game(playerSelection, computerSelection) {
-
+    
     if ((playerSelection !== null) && (['rock', 'scissors', 'paper'].includes(playerSelection))) {
         if (playerSelection === computerSelection) {
             console.log('Draw');
@@ -42,7 +42,7 @@ function game(playerSelection, computerSelection) {
         }
     } else {
         console.log('Please refresh the site and enter your choice again!');
-        game(playerPlay(), computerSelection); // recursion to get new input
+        game(playerPlay(), computerSelection); // recursion to get new valid input
     }
 
 }
